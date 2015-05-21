@@ -1,0 +1,13 @@
+h1 Make a new Classroom
+
+
+form(name="classroom", action="/classrooms/", method="post")
+  label(for="name") Classroom Name
+  input(type="text", name="name")
+  br
+  label(for="numberOfSeats") Number of Seats
+  input(type="number", name="numberOfSeats")
+  br
+  label(for="driver") Has a Keg?
+  input(type="checkbox", name="hasKeg")
+  input(type="submit", value="Create a classroom!")
